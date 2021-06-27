@@ -1,9 +1,11 @@
-calculation_to_units=24
-name_of_unit="hours"
+import requests
+
+response=requests.get("https://gitlab.com/api/v4/users/nanuchi/projects")
+print(response.text)
+print(type(response.text))
+print(response.json()[0])
 
 
-def day_to_units(num_of_days)
-    print(f"20 dyas are {20*calculation_to_units} {name_of_unit}")
-    print("All good!")
 
-days_to_units(35)
+
+
